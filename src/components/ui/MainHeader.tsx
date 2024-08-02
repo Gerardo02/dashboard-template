@@ -14,6 +14,15 @@ import { Input } from './input'
 import { Avatar, AvatarFallback, AvatarImage } from './avatar'
 import { ModeToggle } from '../theme/mode-toggle'
 import { useState } from 'react'
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from './select'
 
 interface HeaderProps {
   isNavHidden?: boolean
@@ -67,6 +76,24 @@ const MainHeader: React.FC<HeaderProps> = ({
             </div>
           </form>
         </div>
+        <div className="w-20">
+          <Select defaultValue="MXN">
+            <SelectTrigger>
+              <SelectValue placeholder="MXN" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                <SelectLabel>Monedas</SelectLabel>
+                <SelectItem value="MXN">MXN</SelectItem>
+                <SelectItem value="USD">USD</SelectItem>
+                <SelectItem value="EUR">EUR</SelectItem>
+                <SelectItem value="JPY">JPY</SelectItem>
+                <SelectItem value="CAD">CAD</SelectItem>
+              </SelectGroup>
+            </SelectContent>
+          </Select>
+        </div>
+
         <Button
           variant="outline"
           size="icon"

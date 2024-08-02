@@ -5,15 +5,19 @@ import { PieComponent } from '../charts/pie'
 import { RayasComponent } from '../charts/rayas'
 import { Button } from '../ui/button'
 import { Tabs, TabsList, TabsTrigger } from '../ui/tabs'
+import { Badge } from '../ui/badge'
 
 const Overview = () => {
   return (
-    <div className="grid gap-4">
+    <div className="grid gap-4 min-w-1">
       <div className="flex justify-between mb-2">
         <div className="flex flex-col">
           <strong className="text-3xl sm:text-4xl">$123,420.50</strong>
           <span className="text-[14px]">
-            Balance total de todas las cuentas <strong>MXN</strong>
+            Balance total de todas las cuentas{' '}
+            <Badge variant="outline">
+              <strong>MXN</strong>
+            </Badge>
           </span>
         </div>
         <Button className="rounded-full gap-2 order-last">
@@ -21,7 +25,7 @@ const Overview = () => {
           <span className="hidden sm:block">Iniciar proceso</span>
         </Button>
       </div>
-      <Tabs defaultValue="7-dias" className="w-[400px]">
+      <Tabs defaultValue="7-dias" className="w-full">
         <TabsList>
           <TabsTrigger value="7-dias">7 Dias</TabsTrigger>
           <TabsTrigger value="30-dias">30 Dias</TabsTrigger>
