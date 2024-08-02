@@ -7,11 +7,12 @@ import { RayasComponent } from '../charts/rayas'
 const Overview = () => {
   return (
     <div className="grid gap-4">
+      <text className="text-3xl">Resumen &#128517;</text>
       <div className="flex flex-col justify-center gap-4 flex-nowrap md:flex-wrap md:flex-row">
-        <BarComponent />
+        <PieComponent />
         <WavesComponent />
         <LineComponent />
-        <PieComponent />
+        <BarComponent />
       </div>
       <RayasComponent />
     </div>

@@ -31,7 +31,7 @@ const chartConfig = {
 } satisfies ChartConfig
 export function BarComponent() {
   return (
-    <Card className="flex-grow md:w-[300px] md:max-w-[600px] xl:w-[400px]">
+    <Card className="flex-grow md:w-[300px] xl:w-[400px]">
       <CardHeader>
         <CardTitle>Bar Chart - Label</CardTitle>
         <CardDescription>January - June 2024</CardDescription>
