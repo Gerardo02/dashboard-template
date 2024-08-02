@@ -35,7 +35,7 @@ const chartConfig = {
 } satisfies ChartConfig
 export function WavesComponent() {
   return (
-    <Card className="flex-grow md:w-[300px] xl:w-[400px]">
+    <Card className="flex-grow lg:w-[300px] xl:w-[400px]">
       <CardHeader>
         <CardTitle>Area Chart - Gradient</CardTitle>
         <CardDescription>

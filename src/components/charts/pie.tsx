@@ -72,7 +72,7 @@ export function PieComponent() {
   return (
     <Card
       data-chart={id}
-      className="flex flex-col flex-grow md:w-[300px] xl:w-[400px]"
+      className="flex flex-col flex-grow lg:w-[300px] xl:w-[400px]"
     >
       <ChartStyle id={id} config={chartConfig} />
       <CardHeader className="flex-row items-start space-y-0 pb-0">

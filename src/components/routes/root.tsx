@@ -52,9 +52,9 @@ const Root = () => {
       className="sm:w-screen min-h-svh sm:min-h-svh"
     >
       <ResizablePanel
-        defaultSize={screenSize.width < 768 || isNavHidden ? 0 : 20}
-        maxSize={screenSize.width < 768 || isNavHidden ? 0 : 30}
-        minSize={screenSize.width < 768 || isNavHidden ? 0 : 20}
+        defaultSize={screenSize.width < 768 || isNavHidden ? 0 : 15}
+        maxSize={screenSize.width < 768 || isNavHidden ? 0 : 25}
+        minSize={screenSize.width < 768 || isNavHidden ? 0 : 13}
         className="sm:border-l"
       >
         <NavBar />
