@@ -9,7 +9,7 @@ import { Badge } from '../ui/badge'
 
 const Overview = () => {
   return (
-    <div className="grid gap-4 min-w-1">
+    <div className="grid gap-4">
       <div className="flex justify-between mb-2">
         <div className="flex flex-col">
           <strong className="text-3xl sm:text-4xl">$123,420.50</strong>
@@ -25,12 +25,12 @@ const Overview = () => {
           <span className="hidden sm:block">Iniciar proceso</span>
         </Button>
       </div>
-      <Tabs defaultValue="7-dias" className="w-full">
+      <Tabs defaultValue="7" className="w-full">
         <TabsList>
-          <TabsTrigger value="7-dias">7 Dias</TabsTrigger>
-          <TabsTrigger value="30-dias">30 Dias</TabsTrigger>
-          <TabsTrigger value="3-meses">3 Meses</TabsTrigger>
-          <TabsTrigger value="1-year">1 Año</TabsTrigger>
+          <TabsTrigger value="7">7 Dias</TabsTrigger>
+          <TabsTrigger value="30">30 Dias</TabsTrigger>
+          <TabsTrigger value="3">3 Meses</TabsTrigger>
+          <TabsTrigger value="1">1 Año</TabsTrigger>
         </TabsList>
       </Tabs>
       <div className="flex flex-col justify-center gap-4 flex-nowrap sm:flex-wrap md:flex-row">
